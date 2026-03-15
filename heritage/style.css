@@ -1,0 +1,313 @@
+/* style.css – Daet Cultural Heritage – FULL INFO PRESERVED, PHONE OPTIMISED */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #f1f5f9;
+  color: #0f172a;
+  line-height: 1.5;
+}
+
+/* ================= blue‑600 base ================= */
+header {
+  background: #2563eb;
+  color: white;
+  text-align: center;
+  padding: clamp(30px, 8vw, 60px) 16px;
+  border-bottom: 5px solid #1e3a8a;
+}
+
+header h1 {
+  font-size: clamp(1.8rem, 6vw, 2.6rem);
+  margin-bottom: 8px;
+}
+
+header p {
+  font-size: clamp(1rem, 4vw, 1.2rem);
+}
+
+/* ================= navigation – sticky & tappable ================= */
+nav {
+  background: white;
+  padding: 12px 8px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 2px solid #94a3b8;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+nav button {
+  border: none;
+  background: #2563eb;
+  color: white;
+  padding: 10px 12px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: clamp(0.75rem, 3vw, 0.9rem);
+  cursor: pointer;
+  transition: 0.2s;
+  box-shadow: 0 2px 6px rgba(37,99,235,0.3);
+  flex: 0 1 auto;
+  min-width: 70px;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+nav button:hover {
+  background: #1d4ed8;
+  transform: scale(1.02);
+}
+
+/* ================= homepage ================= */
+.homepage {
+  background: linear-gradient(145deg, #dbeafe, #bfdbfe);
+  padding: clamp(40px, 10vw, 100px) 16px;
+  text-align: center;
+  border-radius: 0 0 30px 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.homepage h2 {
+  font-size: clamp(2rem, 7vw, 2.6rem);
+  color: #1e3a8a;
+  margin-bottom: 12px;
+}
+
+.homepage p {
+  font-size: clamp(1rem, 4vw, 1.3rem);
+  margin-bottom: 24px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btnStart {
+  background: #2563eb;
+  color: white;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 40px;
+  font-weight: bold;
+  font-size: clamp(1.1rem, 5vw, 1.2rem);
+  cursor: pointer;
+  transition: 0.2s;
+  box-shadow: 0 6px 12px rgba(37,99,235,0.3);
+  touch-action: manipulation;
+  width: fit-content;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.btnStart:hover {
+  background: #1d4ed8;
+  transform: scale(1.03);
+}
+
+/* ================= container – light blue bg ================= */
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px 16px;
+  background: #eef2ff;
+  border-radius: 30px 30px 20px 20px;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.8), 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.section {
+  margin-bottom: 60px;
+}
+
+/* ================= cards ================= */
+.card {
+  background: white;
+  border-radius: 24px;
+  box-shadow: 0 8px 20px rgba(37,99,235,0.15);
+  overflow: hidden;
+  transition: 0.2s;
+  margin-bottom: 20px;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(37,99,235,0.25);
+}
+
+.card-img {
+  width: 100%;
+  display: block;
+  max-height: 300px;           /* slightly reduced for mobile */
+  object-fit: cover;
+  background: #b3c7ff;
+}
+
+.content {
+  padding: 20px 18px;
+}
+
+.content h2 {
+  color: #2563eb;
+  font-size: clamp(1.5rem, 5vw, 1.8rem);
+  margin-bottom: 12px;
+  border-left: 5px solid #1e3a8a;
+  padding-left: 14px;
+  line-height: 1.2;
+}
+
+.content p {
+  margin-bottom: 16px;
+  font-size: 1rem;
+}
+
+/* ===== lists – full detail preserved, mobile friendly ===== */
+ul {
+  margin: 16px 0 16px 20px;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+li {
+  margin-bottom: 8px;
+  word-break: break-word;      /* prevent overflow */
+}
+
+/* ================= gallery ================= */
+.gallery {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 20px 0 16px;
+}
+
+.gallery img {
+  width: calc(33.33% - 6px);
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  border-radius: 12px;
+  background: #a5b8ff;
+  border: 1px solid #94a3b8;
+  min-height: 70px;
+}
+
+/* ================= 360° viewer – responsive ================= */
+.vr-viewer {
+  width: 100%;
+  height: 250px;               /* optimal for phones */
+  border: none;
+  border-radius: 18px;
+  margin-top: 16px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+/* ================= footer ================= */
+footer {
+  background: #2563eb;
+  color: white;
+  text-align: center;
+  padding: 20px 16px;
+  border-top: 5px solid #1e3a8a;
+  font-size: 0.95rem;
+  margin-top: 20px;
+}
+
+/* ========== RESPONSIVE MEDIA QUERIES ========== */
+
+/* small phones (<=480px) */
+@media (max-width: 480px) {
+  nav button {
+    padding: 8px 6px;
+    min-width: 60px;
+    font-size: 0.7rem;
+  }
+
+  .gallery img {
+    width: calc(50% - 4px);    /* 2 per row */
+  }
+
+  .content h2 {
+    font-size: 1.4rem;
+  }
+
+  .vr-viewer {
+    height: 200px;
+  }
+
+  ul {
+    font-size: 0.9rem;
+    margin-left: 16px;
+  }
+}
+
+/* medium phones (<=600px) */
+@media (max-width: 600px) {
+  .container {
+    padding: 16px 12px;
+  }
+
+  .content {
+    padding: 16px;
+  }
+
+  .card-img {
+    max-height: 250px;
+  }
+
+  .btnStart {
+    padding: 12px 24px;
+  }
+}
+
+/* tablets (768px and up) – keep information readable */
+@media (min-width: 768px) {
+  .vr-viewer {
+    height: 350px;
+  }
+
+  .card-img {
+    max-height: 350px;
+  }
+
+  nav button {
+    padding: 12px 18px;
+    font-size: 0.95rem;
+  }
+
+  .gallery img {
+    width: calc(33.33% - 6px);
+    max-height: 130px;
+  }
+}
+
+/* large screens */
+@media (min-width: 1200px) {
+  .container {
+    padding: 30px;
+  }
+
+  .vr-viewer {
+    height: 400px;
+  }
+
+  .card-img {
+    max-height: 400px;
+  }
+}
+
+/* utility */
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
